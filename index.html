@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- <div class="brand">Pen Shop</div> -->
+            <!-- Hamburger Icon with checkbox hack -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <div class="menu">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Products</a>
+                <a href="#" class="nav-link">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Find Your Perfect Pen</h1>
+            <p>Quality pens for every occasion.</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="pen2.webp" alt="Pen 1">
+                    <h3>Pen Model 1</h3>
+                    <p>Elegant and smooth writing.</p>
+                </div>
+                <div class="product-card">
+                    <img src="pen2.webp"  alt="Pen 2">
+                    <h3>Pen Model 2</h3>
+                    <p>Perfect for professionals.</p>
+                </div>
+                <div class="product-card">
+                    <img src="pen2.webp" alt="Pen 3">
+                    <h3>Pen Model 3</h3>
+                    <p>Classic design with modern ink.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Pen Shop. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

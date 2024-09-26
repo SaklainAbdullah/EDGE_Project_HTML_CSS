@@ -1,0 +1,208 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #1f1f1f;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navbar .brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #e0e0e0;
+    display: none; /* Hidden by default */
+}
+
+/* Menu styles */
+.menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar .nav-link {
+    color: #e0e0e0;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.navbar .nav-link:hover {
+    background-color: #333333;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Hide the menu by default */
+        flex-direction: column; /* Stack links vertically */
+        background-color: #1f1f1f;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%; /* Full-width menu */
+        padding: 10px 0;
+        text-align: center;
+        border-top: 1px solid #333;
+    }
+
+    .menu-icon {
+        display: block; /* Show the menu icon on mobile */
+    }
+
+    .nav-link {
+        padding: 10px;
+        width: 100%; /* Full-width links */
+        border-radius: 0; /* Remove border radius for mobile view */
+    }
+
+    /* Checkbox Hack to toggle the menu */
+    .menu-toggle:checked + .menu-icon + .menu {
+        display: flex;
+    }
+}
+
+/* Hero Section */
+.hero {
+    background: url('pen.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+/* Products Section */
+.products {
+    padding: 50px 0;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin: 15px 0 10px;
+}
+
+.product-card p {
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        width: 100%;
+    }
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #e0e0e0;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #444444;
+    border: none;
+    border-radius: 5px;
+    color: #e0e0e0;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #555555;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 20px 0;
+}
